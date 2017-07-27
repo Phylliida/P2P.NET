@@ -56,3 +56,4 @@ class SampleUsage
     }
 }
   ```
+All the work is done on a seperate thread (that is then passed to thread-safe queues that are dequeued when you call `Update()`) so it is all non-blocking  
