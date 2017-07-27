@@ -43,16 +43,16 @@ class SampleUsage
         Console.WriteLine(peer + " sent " + bytes.Length + " bytes");
     }
 
-    // Call peer.Dispose() whenever you are done using it
+    // Call peer.Dispose() when you are done using it
     void OnClose()
     {
-        peer.Dispose(); // it is fine to call this more then once
+        myPeer.Dispose(); // it is fine to call this more then once
     }
     
     // Call peer.Update() often (every frame is fine). It will call your callbacks on the thread you call Update()
     void Tick ()
     {
-        peer.Update();
+        myPeer.Update();
     }
 }
   ```
