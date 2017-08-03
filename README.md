@@ -26,6 +26,8 @@ class SampleUsage
     void Peer_OnConnection(string peer)
     {
         Console.WriteLine(peer + " connected");
+        myPeer.Send(peer, "hi there");
+        myPeer.Send(peer, new byte[] {1, 27, 28});
     }
 
     void Peer_OnDisconnection(string peer)
