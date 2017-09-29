@@ -1,0 +1,43 @@
+{
+    "httpConfig":
+    {
+        "port": 12776
+    },
+    "httpsConfig":
+    {
+        "port": 12777,
+        "ssl_key_file": "ssl.key",
+        "ssl_cert_file": "ssl.cert"
+    },
+    "maxPayload": 
+        1048576,
+    "apps": [
+        {
+            "name": "Test",
+            "path": "/"
+        },
+        {
+            "name": "ChatApp",
+            "path": "/chatapp"
+        },
+        {
+            "name": "CallApp",
+            "path": "/callapp",
+            "address_sharing": true
+        },
+        {
+            "name": "ConferenceApp",
+            "path": "/conferenceapp",
+            "address_sharing": true
+        },
+        {
+            "name": "UnitTests",
+            "path": "/test"
+        },
+        {
+            "name": "UnitTestsAddressSharing",
+            "path": "/testshared",
+            "address_sharing": true
+        }
+    ]
+}
