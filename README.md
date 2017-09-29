@@ -9,7 +9,7 @@ class SampleUsage
 {
     Peer myPeer;
     public SampleUsage() {
-        // I'll explain how to make a signaling server on Heroku in a bit
+        // See below for how to make your own signaling server if you want
         myPeer = new Peer("ws://sample-bean.herokuapp.com", "anystring this is your room id");
         myPeer.OnBytesFromPeer += Peer_OnBytesFromPeer;
         myPeer.OnConnection += Peer_OnConnection;
