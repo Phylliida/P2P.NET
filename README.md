@@ -1,6 +1,8 @@
 # P2P.NET
 Peer to peer networking in C# using WebRTC
 
+This technically works, however it has some issues with latency with lots of clients, and the disconnect callback is never called. I've been working on it but am not to a got state yet. Honestly I would recommend using the [WebRTC Network plugin](https://assetstore.unity.com/packages/tools/network/webrtc-network-47846) if you are using Unity, as it does everything my software does and more for free. The author also has [A video and audio chat application](https://assetstore.unity.com/packages/tools/network/webrtc-video-chat-68030) for $95 if you need that as well. I am in no way associated with that author, but his tool is strictly better than mine so I'd recommend using it until mine is in a better place.
+
 This is designed to be pretty easy to use, here is an example:
 
 ```C#
