@@ -127,8 +127,10 @@ var SignalingPeer = (function () {
         try {
             //unlike browsers ws will give a Uint8Array
             var evt = inet.NetworkEvent.fromByteArray(message);
-            console.log("Inc:" + message.length + " " + evt.toString());
-            this.handleIncomingEvent(evt);
+            this.mSocket.send(message);
+            console.log("Got message:" + message);
+            //console.log("Inc:" + message.length + " " + evt.toString());
+            //this.handleIncomingEvent(evt);
         }
         catch (err) {
             console.warn("Invalid message received: " + message + "  \n Error: " + err);
