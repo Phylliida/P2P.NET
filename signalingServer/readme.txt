@@ -15,6 +15,3 @@ You can change used ports and other details in the file config.json.
 ssl.cert and ssl.key contain the an example ssl certificate to allow 
 using secure connections. Simply replace the files with your own
 certificate!
-
-Any problems setting up your own server?
-Send a mail to contact@because-why-not.com or visit http://because-why-not.com !
