@@ -14,7 +14,6 @@ var WebsocketNetworkServer = (function () {
         console.log("connected");
         
         socket.on('message', function (message, flags) {
-            console.log("got message " + message);
             for (var otherSocket in _this.sockets)
             {
               if (_this.sockets.hasOwnProperty(otherSocket))
