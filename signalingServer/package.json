@@ -4,7 +4,7 @@
   "description": "A websocket signaling server for use with WebRTC Network and Video Chat assets for Unity.",
   "main": "server.js",
   "author": {
-    "name": "Phylliida",
+    "name": "Phylliida"
   },
   "dependencies": {
     "express": "^4.13.4",
